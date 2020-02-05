@@ -44,6 +44,7 @@ html {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: transform .4s;
 }
 
 .hamburger__inner {
@@ -60,6 +61,7 @@ html {
     height: .6rem;
     background-color: #fff;
     left: 0;
+    transition: transform .2s;
 }
 
 .hamburger__inner::before {
@@ -68,4 +70,22 @@ html {
 
 .hamburger__inner::after {
     top: 1.4rem;
+}
+
+/* HAMBURGER BUTTON ON CLICK ANIMATION */
+
+.hamburger--is-active > .hamburger__inner {
+    background-color: transparent;
+}
+
+.hamburger--is-active {
+    transform: rotate(180deg);
+}
+
+.hamburger--is-active > .hamburger__inner::before {
+    transform: translateY(1.4rem) rotate(45deg);
+}
+
+.hamburger--is-active > .hamburger__inner::after {
+    transform: translateY(-1.4rem) rotate(-45deg);
 }
