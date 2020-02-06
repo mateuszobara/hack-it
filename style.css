@@ -24,6 +24,7 @@ html {
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
+    z-index: 10;
 }
 
 .header__logo {
@@ -88,4 +89,43 @@ html {
 
 .hamburger--is-active > .hamburger__inner::after {
     transform: translateY(-1.4rem) rotate(-45deg);
+}
+
+.navigation {
+    background-color: #1e1e1e;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.navigation--is-active {
+    display: flex;
+}
+
+.navigation__list {
+    list-style: none;
+    text-align: center;
+}
+
+.navigation__item {
+    padding: 1.4rem;
+    font-size: 6rem;
+    letter-spacing: .8rem;
+    font-family: 'Hacked';
+}
+
+.navigation__link:hover {
+    text-shadow: -2px 2px red, 2px -2px cyan;
+    letter-spacing: 1.6rem;
+}
+
+.navigation__link {
+    color: #fff;
+    text-decoration: none;
 }
