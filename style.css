@@ -11,6 +11,10 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 @font-face {
     font-family: 'Hacked';
     src: url('font/hacked.ttf');
@@ -93,7 +97,7 @@ html {
 
 .navigation {
     background-color: #1e1e1e;
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
@@ -121,7 +125,8 @@ html {
     font-family: 'Hacked';
 }
 
-.navigation__link:hover {
+.navigation__link:hover,
+.item__name:hover {
     text-shadow: -2px 2px red, 2px -2px cyan;
     letter-spacing: 1.6rem;
 }
@@ -169,4 +174,51 @@ html {
     font-family: 'Source Code Pro';
     padding: 2rem 4rem;
     cursor: pointer;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10rem;
+}
+
+.item {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 70%;
+}
+
+.item__photo {
+    text-align: center;
+}
+
+.item__img {
+    width: 80%;
+    height: 80%;
+}
+
+.item__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Source Code Pro';
+    padding: 0 2rem;
+}
+
+.item__name {
+    font-family: 'Hacked';
+    font-size: 4.8rem;
+    letter-spacing: .8rem;
+}
+
+.item__type {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.item__description {
+    font-size: 1.4rem;
 }
