@@ -222,3 +222,16 @@ body {
 .item__description {
     font-size: 1.4rem;
 }
+
+.footer {
+    background-color: #1e1e1e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.footer__copy {
+    font-size: 2rem;
+    font-family: 'Sorce Code Pro';
+}
