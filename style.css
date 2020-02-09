@@ -120,13 +120,12 @@ body {
 
 .navigation__item {
     padding: 1.4rem;
-    font-size: 6rem;
+    font-size: 5.2rem;
     letter-spacing: .8rem;
     font-family: 'Hacked';
 }
 
-.navigation__link:hover,
-.item__name:hover {
+.navigation__link:hover {
     text-shadow: -2px 2px red, 2px -2px cyan;
     letter-spacing: 1.6rem;
 }
@@ -154,7 +153,8 @@ body {
 
 .intro__title {
     font-size: 4rem;
-    line-height: 4;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 .intro__description {
@@ -192,7 +192,9 @@ body {
 }
 
 .item__photo {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .item__img {
@@ -220,6 +222,8 @@ body {
 }
 
 .item__description {
+    font-family: sans-serif;
+    letter-spacing: 1px;
     font-size: 1.4rem;
 }
 
@@ -234,4 +238,33 @@ body {
 .footer__copy {
     font-size: 2rem;
     font-family: 'Sorce Code Pro';
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
+    .intro {
+        padding: 0 20vw;
+    }
+
+    .item {
+        width: 100vw;
+    }
+
+    .item__name {
+        font-family: 'Hacked';
+        font-size: 4rem;
+        letter-spacing: .4rem;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 37.5%;
+    }
+
+    .intro {
+        padding: 0 10vw;
+    }
 }
