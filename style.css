@@ -268,3 +268,13 @@ body {
         padding: 0 10vw;
     }
 }
+
+
+.page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
