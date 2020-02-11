@@ -240,6 +240,171 @@ body {
     font-family: 'Sorce Code Pro';
 }
 
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    padding-top: 6rem;
+    background-color: #1e1e1e;
+}
+
+.boxes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-top: 80px;
+}
+
+.box {
+    margin: 4rem;
+    padding: 3rem 0;
+    text-align: center;
+    background-color: transparent;
+    color: #fff;
+    border: 4px solid #fff;
+    width: 22%;
+    height: 40vh;
+    min-height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.box--pro {
+    width: 25%;
+    height: 45vh;
+    font-size: 1.6rem;
+}
+
+.box__title {
+    font-family: 'Hacked';
+    letter-spacing: .3rem;
+    font-size: 3em;
+}
+
+.box__title--pro {
+    text-shadow: -2px 2px red, 2px -2px cyan;
+    color: #1e1e1e;
+}
+
+.box__list {
+    list-style-type: none;
+    font-family: 'Source Code Pro';
+}
+
+.box__item {
+    margin: 1rem;
+}
+
+.box__price {
+    font-family: 'Hacked';
+    font-size: 2rem;
+}
+.box__price--pro {
+    font-size: 3rem;
+}
+
+.box__button {
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    font-family: 'Source Code Pro';
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.box__button:hover,
+.service__button:hover {
+    color: #1e1e1e;
+    background-color: #fff;
+}
+
+.box__button--pro {
+    padding: 1.4rem 4rem;
+    font-size: 1.6rem;
+}
+
+.services {
+    padding: 80px 10vw 0 10vw;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.services__heading,
+.pricing-plan__heading {
+    font-size: 6rem;
+    font-family: 'Hacked';
+    letter-spacing: .8rem;
+}
+
+.services__description {
+    font-family: 'Source Code Pro';
+    font-size: 2rem;
+    line-height: 1.6;
+}
+
+.services__description--new-line {
+    display: block;
+}
+
+.services__list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.service {
+    border: 4px solid #fff;
+    margin: 4rem 2rem;
+    width: 20%;
+    min-width: 280px;
+    font-family: 'Source Code Pro';
+    text-align: center;
+}
+
+.service__title {
+    background-color: #fff;
+    color: #1e1e1e;
+    padding: 1rem;
+    font-family: 'Hacked';
+    font-size: 3.2rem;
+    letter-spacing: .4rem;
+}
+
+.service__description {
+    font-size: 1.6rem;
+    padding: 1.4rem 2rem;
+    text-align: left;
+}
+
+.service__button {
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'Source Code Pro';
+    margin: 1rem;
+}
+
 @media only screen and (max-width: 1200px) {
     html {
         font-size: 50%;
@@ -269,6 +434,16 @@ body {
     }
 }
 
+@media only screen and (max-width: 600px) {
+
+    .boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 50%;
+    }
+}
 
 .page {
     height: 100vh;
