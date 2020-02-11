@@ -247,10 +247,21 @@ body {
     background-color: #1e1e1e;
 }
 
+.boxes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .pricing-plan {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #fff;
+    padding-top: 80px;
 }
 
 .box {
@@ -335,7 +346,8 @@ body {
     justify-content: space-evenly;
 }
 
-.services__heading {
+.services__heading,
+.pricing-plan__heading {
     font-size: 6rem;
     font-family: 'Hacked';
     letter-spacing: .8rem;
@@ -424,7 +436,7 @@ body {
 
 @media only screen and (max-width: 600px) {
 
-    .pricing-plan {
+    .boxes {
         flex-direction: column;
     }
 
