@@ -343,7 +343,7 @@ body {
 
 .services,
 .contact,
-.forum {
+.forum__wrapper {
     padding: 80px 10vw 0 10vw;
     display: flex;
     flex-direction: column;
@@ -431,7 +431,21 @@ body {
     margin-bottom: 1.4rem;
 }
 
-.forum__login {
+.forum__wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+}
+
+.forum__wrapper--log-in {
+    background-color: #1e1e1e;
+    z-index: -1;
+}
+
+.forum__login,
+.forum__register {
     color: #fff;
     font-weight: bold;
 }
