@@ -6,6 +6,16 @@ const loadPage = (site) => {
     page.send();
 
     app.innerHTML = page.response;
+
+    if (site === "FORUM") {
+        const forumLogin = document.querySelector('.forum__login');
+        const forumRegister = document.querySelector('.forum__register');
+
+        const loginForm = document.querySelector('.forum__wrapper--log-in');
+
+        forumLogin.addEventListener('click', () => loginForm.style.zIndex = '1');
+        forumRegister.addEventListener('click', () => loginForm.style.zIndex = '-1');
+    }
 }
 loadPage('homepage');
 
