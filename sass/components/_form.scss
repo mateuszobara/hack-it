@@ -1,0 +1,47 @@
+.form {
+    align-self: center;
+    border: 4px solid $color-white;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem;
+
+
+    &__heading {
+        font-size: 3.2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__item {
+        padding: .8rem;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+        width: 40vw;
+
+        @include respond-to('medium') {
+            width: 80vw;
+        }
+    }
+
+    &__info {
+        align-self: flex-start;
+        margin-bottom: 2px;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        background-color: transparent;
+        color: $color-white;
+        border: 2px solid $color-white;
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        padding: 1rem 3rem;
+        cursor: pointer;
+
+        &:hover {
+            @include light-theme;
+        }
+    }
+}

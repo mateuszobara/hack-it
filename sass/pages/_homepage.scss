@@ -1,0 +1,51 @@
+.main {
+    @include flexbox-layout;
+
+    align-items: center;
+    padding: 8rem 0 4rem;
+}
+
+.item {
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 70%;
+
+    &__photo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        width: 80%;
+        height: 80%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 0 2rem;
+    }
+
+    &__name {
+        font-family: 'Hacked';
+        font-size: 4rem;
+        letter-spacing: .4rem;
+    }
+
+    &__type {
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        font-size: 1.4rem;
+    }
+
+    @include respond-to('large') {
+        width: 95vw;
+    }
+}

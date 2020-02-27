@@ -1,0 +1,48 @@
+.intro {
+    width: 100vw;
+    height: 90vh;
+    background: url('../img/background.jpg');
+    background-position: top;
+    background-size: cover;
+    padding: 0 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: $color-white;
+
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__description {
+        font-size: 2rem;
+        line-height: 2;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 5%;
+        font-size: 2rem;
+        padding: 2rem 4rem;
+        color: $color-white;
+        background-color: $color-black;
+
+        &:hover {
+            @include light-theme;
+        }
+    }
+
+    @include respond-to('large') {
+        padding: 0 20vw;
+    }
+
+    @include respond-to('medium') {
+        padding: 0 8vw;
+    }
+}

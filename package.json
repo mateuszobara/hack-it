@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "node-sass sass/main.scss css/style.css",
+    "compress": "node-sass css/style.css css/style.min.css --output-style compressed",
+    "build": "npm-run-all compile compress"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,9 @@
   },
   "homepage": "https://github.com/mateuszobara/hack-it#readme",
   "devDependencies": {
-    "node-sass": "^4.13.1"
+    "autoprefixer": "^9.7.4",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^7.1.0"
   }
 }

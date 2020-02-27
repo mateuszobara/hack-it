@@ -1,0 +1,34 @@
+.navigation {
+    background-color: $color-dark;
+    color: $color-white;
+    padding-top: 8rem;
+    position: fixed;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    left: 0;
+    top: 0;
+
+    &--is-active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__list {
+        text-align: center;
+    }
+
+    &__item {
+        font-family: 'Hacked';
+        letter-spacing: .8rem;
+        font-size: 5.2rem;
+        padding: .8rem;
+    }
+
+    &__link:hover {
+        text-shadow: -2px 2px $color-red, 2px -2px $color-cyan;
+        letter-spacing: 1.6rem;
+    }
+}

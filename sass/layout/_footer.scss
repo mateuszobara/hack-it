@@ -1,0 +1,11 @@
+.footer {
+    background-color: $color-dark;
+    color: $color-white;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+
+    .footer__copy {
+        font-size: 2rem;
+    }
+}

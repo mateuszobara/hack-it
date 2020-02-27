@@ -1,0 +1,66 @@
+.plan {
+    min-height: 260px;
+    padding: 3rem;
+    font-size: 1.4rem;
+    background-color: transparent;
+    color: $color-white;
+    border: 4px solid $color-white;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond-to('medium') {
+        margin: 4rem 0;
+        width: 60vw;
+    }
+
+    &--pro {
+        height: 45vh;
+        padding: 4rem 6rem;
+        font-size: 1.6rem;
+    }
+
+    &__title {
+        font-family: 'Hacked';
+        letter-spacing: .3rem;
+        font-size: 3em;
+        margin: 1rem;
+    }
+
+    &__title--pro {
+        text-shadow: -2px 2px $color-red, 2px -2px $color-cyan;
+        color: $color-dark;
+        margin: 1.4rem;
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__price {
+        font-family: 'Hacked';
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    &__price--pro {
+        font-size: 3rem;
+        margin: 1rem;
+    }
+
+    &__button {
+        background-color: transparent;
+        color: $color-white;
+        text-transform: uppercase;
+        padding: 1rem 3rem;
+        border: 2px solid $color-white;
+        font-size: 1.4rem;
+
+        &:hover {
+            @include light-theme;
+        }
+    }
+}
