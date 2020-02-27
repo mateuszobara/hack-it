@@ -1,0 +1,28 @@
+.forum {
+    &__wrapper {
+        @include flexbox-layout;
+        @include dark-theme;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        &--log-in {
+            background-color: $color-dark;
+            display: none;
+        }
+    }
+
+    &__heading {
+        @include heading;
+    }
+
+    &__description {
+        @include description;
+    }
+
+    &__login,
+    &__register {
+        color: $color-white;
+        font-weight: bold;
+    }
+}

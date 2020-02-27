@@ -1,0 +1,16 @@
+.services {
+    @include flexbox-layout;
+    @include dark-theme;
+
+    &__heading {
+        @include heading;
+    }
+
+    &__description {
+        @include description;
+    }
+
+    &__list {
+        @include list;
+    }
+}

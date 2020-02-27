@@ -1,0 +1,20 @@
+.header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-dark;
+    color: $color-white;
+    padding: 2rem 4rem;
+    z-index: 10;
+
+    &__logo {
+        font-family: 'Hacked';
+        letter-spacing: .8rem;
+    }
+
+    &__title {
+        font-size: 4rem;
+    }
+}
